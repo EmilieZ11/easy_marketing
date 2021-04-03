@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/oBody"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oBody"
+    android:layoutDirection="ltr"
+    tools:context=".Orders">
+
+    <View
+        android:id="@+id/oMotor1"
+        style="@style/motor" />
+
+    <View
+        android:id="@+id/oToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mCartTB"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/oBack"
+        style="@style/mCartTBButton"
+        android:src="@drawable/back_1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="@string/mCartTitle"
+        android:textColor="@color/mCartTitle"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/oToolbar"
+        app:layout_constraintStart_toEndOf="@id/oBack"
+        app:layout_constraintTop_toTopOf="@id/oToolbar" />
+
+    <View
+        android:id="@+id/oReload"
+        style="@style/mCartTBButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/oReloadIV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="15dp"
+        android:src="@drawable/reload_3"
+        app:layout_constraintBottom_toBottomOf="@id/oReload"
+        app:layout_constraintLeft_toLeftOf="@id/oReload"
+        app:layout_constraintRight_toRightOf="@id/oReload"
+        app:layout_constraintTop_toTopOf="@id/oReload" />
+
+    <LinearLayout
+        android:id="@+id/oTitle"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/mCIList"
+        android:orientation="horizontal"
+        android:weightSum="8"
+        app:layout_constraintTop_toBottomOf="@id/oToolbar">
+
+        <TextView
+            style="@style/mCIList"
+            android:layout_weight="3"
+            android:paddingStart="17dp"
+            android:text="@string/mCIList1" />
+
+        <TextView
+            style="@style/mCIList"
+            android:layout_weight="2.25"
+            android:text="@string/mCIList2" />
+
+        <TextView
+            style="@style/mCIList"
+            android:layout_weight="2.75"
+            android:paddingStart="0dp"
+            android:paddingEnd="3dp"
+            android:text="@string/mCIList3"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/oRV0"
+        style="@style/mRV"
+        android:visibility="visible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/oRV1"
+        style="@style/mRV" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/oRV2"
+        style="@style/mRV" />
+
+    <TextView
+        android:id="@+id/oRVEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="@string/mRVEmpty"
+        android:textAlignment="center"
+        android:textColor="@color/mRVEmpty"
+        android:textSize="19sp"
+        android:translationY="-111dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/oTitle" />
+
+    <View
+        style="@style/shadow_1"
+        android:layout_height="4dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/oToolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mCITitleBorder"
+        app:layout_constraintBottom_toBottomOf="@id/oTitle" />
+
+    <View
+        style="@style/shadow_1"
+        android:layout_height="1dp"
+        android:alpha="0.8"
+        app:layout_constraintTop_toBottomOf="@id/oTitle" />
+
+    <View
+        style="@style/shadow_1"
+        android:layout_height="4dp"
+        android:rotationX="180"
+        app:layout_constraintBottom_toTopOf="@id/oBNV" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/oBNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/mBNV"
+        app:itemIconTint="@drawable/bnv_1"
+        app:itemTextColor="@drawable/bnv_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bnv_orders" />
+</androidx.constraintlayout.widget.ConstraintLayout>

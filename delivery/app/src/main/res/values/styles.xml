@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/CP</item>
+        <item name="colorPrimaryDark">@color/CPD</item>
+        <item name="colorAccent">@color/CA</item>
+    </style>
+
+    <style name="AppThemeConverse" parent="@style/AppTheme">
+        <item name="colorAccent">@color/CP2</item>
+    </style>
+
+
+    <!-- GLOBAL -->
+    <style name="motor">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:visibility">invisible</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+    </style>
+
+    <style name="shadow_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:background">@drawable/shadow_1</item>
+    </style>
+
+    <style name="shadow_1_vertical">
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/shadow_1_vertical</item>
+    </style>
+
+
+    <!-- Login -->
+    <style name="lET">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text_1</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">11dp</item>
+        <item name="android:paddingBottom">11dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/lET</item>
+        <item name="android:textSize">19dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="layout_constraintWidth_percent">0.69</item>
+    </style>
+
+
+    <!-- Delivery -->
+    <style name="mCILITV">
+        <item name="android:textColor">@color/mCILITV</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:paddingTop">9dp</item>
+        <item name="android:paddingBottom">9dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+    </style>
+
+
+    <!--<style name="">
+        <item name=""></item>
+    </style>-->
+</resources>

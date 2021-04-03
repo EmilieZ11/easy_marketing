@@ -1,0 +1,17 @@
+<resources>
+    <!-- GLOBAL -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/CP</item>
+        <item name="colorPrimaryDark">@color/CPD</item>
+        <item name="colorAccent">@color/CA</item>
+    </style>
+
+    <style name="motor">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:visibility">invisible</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+    </style>
+
+</resources>

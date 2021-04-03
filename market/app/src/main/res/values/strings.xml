@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Easy Marketing</string>
+
+    <!-- GLOBAL -->
+    <string name="site">http://easys.uk/demo/retail/</string>
+    <string name="loginURL">my-account-2/</string>
+    <string name="delManager">http://easys.uk/android/customer.php</string>
+    <string name="noInternet">Please check your internet connection!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+
+    <!-- Main -->
+    <string name="toExit">Double tap to exit&#8230;</string>
+    <string name="mCartTitle">List of Orders</string>
+    <string name="mCIList0">#</string>
+    <string name="mCIList1">Date</string>
+    <string name="mCIList2">Total Price</string>
+    <string name="mCIList3">Status</string>
+    <string name="mCIID">ID:&#160;</string>
+    <string name="mWCErrorUnknown">Unfortunately an unknown error occurred!</string>
+    <string name="momCancel">Cancel Order</string>
+    <string name="momCancelSure">Are you sure you want to cancel this order?</string>
+    <string name="mRVEmpty">You have ordered nothing yet.</string>
+    <string name="mOrderStat">Order Status</string>
+    <string name="mStatDeliveryAssigned">The delivery driver is assigned but hasn\'t yet started to bring your order.</string>
+    <string name="mStatFailed">This order was failed!</string>
+    <string name="mStatCompleted">This order is completed.</string>
+    <string name="mStatCancelled">This order was cancelled.</string>
+    <string name="mStatPending">Pending&#8230;</string>
+    <string name="mStatProcessing">Processing&#8230;</string>
+    <string name="mStatOrderReturned">Authentication Required&#8230;</string>
+    <string name="mStatOnHold">On Hold&#8230;</string>
+    <string name="mStatRefunded">Refunded&#8230;</string>
+
+    <!-- Maps -->
+    <string name="pTBTitle">@string/app_name</string>
+    <string name="pTBSubtitle">Navigation</string>
+    <string name="coDelivery">Delivery</string>
+    <string name="coCustomer">Destination</string>
+    <string name="incomInfo">Incomplete Information!</string>
+    <string name="pCall">Call the Delivery Driver</string>
+    <string name="cannotCall">Sorry, the delivery driver\'s phone number is currently unavailable! Try again later.</string>
+    <string name="notFoundCall">The delivery driver has no specified phone number.</string>
+    <string name="unableToCall">No activity to handle the \"CALL\" action.</string>
+    <string name="notAssigned">Delivery driver was not found!</string>
+
+    <!-- #Currencies -->
+    <string name="IQD">IQD</string>
+
+
+    <!--<string name=""></string>-->
+</resources>

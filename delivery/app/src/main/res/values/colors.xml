@@ -1,0 +1,37 @@
+<resources>
+    <color name="CP">#F74046</color>
+    <color name="CPD">#D92228</color>
+    <color name="CA">@color/CP</color>
+    <color name="CP2">#F9FAFC</color>
+
+    <!-- GLOBAL -->
+    <color name="list_1">@color/CP2</color>
+    <color name="shadow_1">#55000000</color>
+
+    <!-- Login -->
+    <color name="lBody">@color/CP</color>
+    <color name="lET">@color/CP2</color>
+    <color name="lETBG">@color/CP</color>
+    <color name="lLogin">@color/CP</color>
+    <color name="mCartItem">@color/CP2</color>
+    <color name="mCartItemPressed">#FCEEF0</color>
+    <color name="mCartItemTV">@color/CPD</color>
+    <color name="mCartItemLL2">#F6F6F6</color>
+    <color name="dOrdEmpty">#888</color>
+    <color name="mCILITV">@color/CPD</color>
+
+    <!-- Delivery -->
+    <color name="dToolbar">@color/CPD</color>
+    <color name="dTBTitle">@color/CP2</color>
+    <color name="dNav">@color/CP2</color>
+    <color name="dNavBG">#55000000</color>
+    <color name="dNavLogo">@color/CP</color>
+    <color name="dRVStatDis">#B0B0B0</color>
+    <color name="dCover1">#66000000</color>
+    <color name="dOrdSpace">#E0E0E0</color>
+    <color name="dStatTV">@color/CPD</color>
+    <color name="dChangeStatus">@color/CP2</color>
+    <color name="dChangeStatusTV">@color/CPD</color>
+
+    <!--<color name=""></color>-->
+</resources>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mBody"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mBody"
+    android:layoutDirection="ltr"
+    tools:context=".Main">
+
+    <View
+        android:id="@+id/mMotor1"
+        style="@style/motor" />
+
+    <uk.easys.easykeeper.webview.AdvancedWebView
+        android:id="@+id/mWV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/mLoadingBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mLoadingBG" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mLoading"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        app:layout_constraintBottom_toBottomOf="@id/mLoadingBG"
+        app:layout_constraintLeft_toLeftOf="@id/mLoadingBG"
+        app:layout_constraintRight_toRightOf="@id/mLoadingBG"
+        app:layout_constraintTop_toTopOf="@id/mLoadingBG">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/easy_logo_2_tiny"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.55"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.55" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/loading_1"
+                android:rotation="90"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintWidth_percent="0.5" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/loading_1"
+                android:rotation="180"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintWidth_percent="0.5" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/loading_1"
+                android:rotation="270"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintWidth_percent="0.5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/loading_1_tiny"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:adjustViewBounds="true"
+        android:scaleX="1.1"
+        android:scaleY="1.1"
+        android:src="@drawable/circle_shadow_1"
+        app:layout_constraintBottom_toBottomOf="@id/mCartIcon"
+        app:layout_constraintLeft_toLeftOf="@id/mCartIcon"
+        app:layout_constraintRight_toRightOf="@id/mCartIcon"
+        app:layout_constraintTop_toTopOf="@id/mCartIcon" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mCartIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/corner_tab_2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:background="@drawable/m_cart_item_bg"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/mCartIconIV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/box_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mLoad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mLoad"
+        android:layoutDirection="ltr">
+
+        <ImageView
+            android:id="@+id/mLoadTV1"
+            android:layout_width="130dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/easy_logo_2_text_1"
+            app:layout_constraintBottom_toTopOf="@id/mLoadTV2"
+            app:layout_constraintLeft_toLeftOf="@id/mLoadTV2" />
+
+        <ImageView
+            android:id="@+id/mLoadTV2"
+            android:layout_width="155dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="48dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/easy_keeper_text_1_2"
+            app:layout_constraintBottom_toBottomOf="@id/mLoadIV"
+            app:layout_constraintRight_toRightOf="@id/mLoadTVCover"
+            app:layout_constraintTop_toTopOf="@id/mLoadIV" />
+
+        <View
+            android:id="@+id/mLoadTVCover"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/mLoad"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/mLoadIV" />
+
+        <ImageView
+            android:id="@+id/mLoadIV"
+            android:layout_width="135.5dp"
+            android:layout_height="135.5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/easy_keeper_logo_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

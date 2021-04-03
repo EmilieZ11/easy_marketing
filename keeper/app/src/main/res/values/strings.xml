@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Easy Keeper</string>
+
+    <!-- GLOBAL -->
+    <string name="site">https://easys.uk/demo/retail/manager/</string>
+    <string name="button">http://easys.uk/demo/retail/manager/edit.php?post_type=product</string>
+
+    <!-- Main -->
+    <string name="toExit">Double tap to exit&#8230;</string>
+</resources>

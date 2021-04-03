@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alpha="0"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/m_cart_item_bg">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="60dp"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/mCartItemTV"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="46dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/hover_tp_to_cp_weak_1"
+            android:paddingStart="2dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="2dp"
+            android:paddingBottom="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="46dp"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/mCartItemTV"
+            android:textDirection="ltr"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="46dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/mCartItemTV"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dOrdSpace" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mCartItemLL2"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            style="@style/shadow_1"
+            android:layout_height="3dp"
+            android:alpha="0.4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            style="@style/shadow_1_vertical"
+            android:layout_width="3dp"
+            android:alpha="0.3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            style="@style/shadow_1_vertical"
+            android:layout_width="3dp"
+            android:alpha="0.3"
+            android:rotationY="180"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            style="@style/shadow_1"
+            android:layout_height="3dp"
+            android:alpha="0.3"
+            android:rotationX="180"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

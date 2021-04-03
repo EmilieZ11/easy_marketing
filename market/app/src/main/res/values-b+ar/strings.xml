@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Easy Marketing</string>
+
+    <!-- GLOBAL -->
+    <string name="site">http://easys.uk/demo/retail/</string>
+    <string name="loginURL">my-account-2/</string>
+    <string name="delManager">http://easys.uk/android/customer.php</string>
+    <string name="noInternet">الرجاء التحقق من اتصال الانترنت الخاص بك!</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="ok">حسنا</string>
+
+    <!-- Main -->
+    <string name="toExit">اضغط مرتين للخروج&#8230;</string>
+    <string name="mCartTitle">قائمة الطلبات</string>
+    <string name="mCIList0">#</string>
+    <string name="mCIList1">التاريخ</string>
+    <string name="mCIList2">السعر الكلي</string>
+    <string name="mCIList3">الحالة</string>
+    <string name="mCIID">هویة:&#160;</string>
+    <string name="mWCErrorUnknown">للأسف حدث خطأ مجهول!</string>
+    <string name="momCancel">إلغاء الطلب</string>
+    <string name="momCancelSure">هل أنت متأكد أنك تريد إلغاء هذا الطلب؟</string>
+    <string name="mRVEmpty">ما طلبت شيء حتى الآن.</string>
+    <string name="mOrderStat">حالة الطلب</string>
+    <string name="mStatDeliveryAssigned">The delivery driver is assigned but hasn\'t yet started to bring your order.</string>
+    <string name="mStatFailed">فشل هذا الطلب.</string>
+    <string name="mStatCompleted">تم الانتهاء من هذا الطلب.</string>
+    <string name="mStatCancelled">تم الغاء هذا الطلب.</string>
+    <string name="mStatPending">Pending&#8230;</string>
+    <string name="mStatProcessing">Processing&#8230;</string>
+    <string name="mStatOrderReturned">Authentication Required&#8230;</string>
+    <string name="mStatOnHold">On Hold&#8230;</string>
+    <string name="mStatRefunded">Refunded&#8230;</string>
+
+    <!-- Maps -->
+    <string name="pTBTitle">@string/app_name</string>
+    <string name="pTBSubtitle">Navigation</string>
+    <string name="coDelivery">السائق</string>
+    <string name="coCustomer">الغایة</string>
+    <string name="incomInfo">معلومات غير مكتملة!</string>
+    <string name="pCall">اتصل بسائق التوصیل</string>
+    <string name="cannotCall">Sorry, the delivery driver\'s phone number is currently unavailable! Try again later.</string>
+    <string name="notFoundCall">لم يحدد السائق أي رقم هاتف.</string>
+    <string name="unableToCall">No activity to handle the \"CALL\" action.</string>
+    <string name="notAssigned">لم يتم العثور على سائق التسليم!</string>
+
+    <!-- #Currencies -->
+    <string name="IQD">د.ع</string>
+
+
+    <!--<string name=""></string>-->
+</resources>

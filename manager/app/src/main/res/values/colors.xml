@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="CP">#F74046</color>
+    <color name="CPD">#D92228</color>
+    <color name="CA">@color/CP</color>
+    <color name="CP2">#F9FAFC</color>
+
+    <!-- GLOBAL -->
+    <color name="tp">#00000000</color>
+    <color name="shadow_1">#55000000</color>
+
+    <!-- Main -->
+    <color name="mBody">@color/CP2</color>
+    <color name="mLoad">@color/CP</color>
+    <color name="mCartIconCF">@color/CP</color>
+    <color name="mMenu">@color/tp</color>
+    <color name="mLoadingBG">#92FFFFFF</color>
+    <color name="mMenuIcon">#FCEEF0</color>
+    <color name="mMenuIconTV">@color/CP2</color>
+    <color name="mMenuTitle">@color/CP2</color>
+    <color name="mMenuTitleBorder">@color/mMenuTitle</color>
+
+    <!-- Orders -->
+    <color name="oBody">#FFF</color>
+    <color name="mCartTB">@color/CPD</color>
+    <color name="mCartTitle">@color/CP2</color>
+    <color name="mCartItem">@color/CP2</color>
+    <color name="mCartItemPressed">#FCEEF0</color>
+    <color name="mCartItemTV">@color/CPD</color>
+    <color name="mCartItemLL2">#F6F6F6</color>
+    <color name="mCartItemGoDis">#B0B0B0</color>
+    <color name="mCILITV">@color/CPD</color>
+    <color name="mCIList">@color/mCartItemLL2</color>
+    <color name="mCIBorder">#E0E0E0</color>
+    <color name="mCITitleBorder">#DADADA</color>
+    <color name="mRVEmpty">#888</color>
+    <color name="mCISpn">@color/CP</color>
+    <color name="mCISpnTV">@color/CP2</color>
+    <color name="mCISpnDDTV">@color/CPD</color>
+    <color name="mCISpnMark">@color/CP2</color>
+    <color name="mBNV">@color/CPD</color>
+    <color name="mBNVItem">@color/CP2</color>
+    <color name="mBNVItemDis">#DDD</color>
+</resources>

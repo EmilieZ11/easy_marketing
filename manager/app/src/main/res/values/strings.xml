@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Easy Manager</string>
+
+    <!-- GLOBAL -->
+    <string name="site">http://easys.uk/demo/retail/</string>
+    <string name="siteLogin">http://easys.uk/demo/retail/login/</string>
+    <string name="siteOrders">http://easys.uk/demo/retail/manager/edit.php?post_type=shop_order</string>
+    <string name="manManager">http://easys.uk/android/manager.php</string>
+    <string name="noInternet">Please check your internet connection!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="unknown">Unknown</string>
+
+    <!-- Main -->
+    <string name="toExit">Double tap to exit&#8230;</string>
+    <string name="mCartTitle">Order Submission</string>
+    <string name="mCIList1">Customer</string>
+    <string name="mCIList2">Date</string>
+    <string name="mCIList3">Status</string>
+    <string name="mCIID">ID:&#160;</string>
+    <string name="mWCErrorUnknown">Unfortunately an unknown error occurred!</string>
+    <string name="mRVEmpty">No orders yet.</string>
+    <string name="mOrderStat">Order Status</string>
+    <string name="mStatDeliveryAssigned">The delivery driver is assigned but hasn\'t yet started to bring your order.</string>
+    <string name="mStatFailed">This order was failed by&#160;</string>
+    <string name="mStatCompleted">This order was completed by&#160;</string>
+    <string name="mStatCancelled">This order was cancelled.</string>
+    <string name="mStatPending">Pending&#8230;</string>
+    <string name="mStatProcessing">Processing&#8230;</string>
+    <string name="mStatOrderReturned">Authentication Required&#8230;</string>
+    <string name="mStatOnHold">On Hold&#8230;</string>
+    <string name="mStatRefunded">Refunded&#8230;</string>
+    <string name="mBNVWaiting">Waiting</string>
+    <string name="mBNVAssigned">Driver Assigned</string>
+    <string name="mBNVEnded">Ended</string>
+    <string-array name="mMenuLinks">
+        <item>http://easys.uk/demo/retail/manager/edit.php?post_type=shop_order</item>
+        <item>http://easys.uk/demo/retail/manager/edit.php</item>
+        <item>http://easys.uk/demo/retail/manager/edit.php?post_type=product</item>
+        <item>http://easys.uk/demo/retail/manager/edit.php?post_type=page</item>
+        <item>http://easys.uk/demo/retail/manager/users.php</item>
+    </string-array>
+    <string-array name="mMenuTexts">
+        <item>Orders</item>
+        <item>Posts</item>
+        <item>Products</item>
+        <item>Pages</item>
+        <item>Users</item>
+        <item>Submission</item>
+    </string-array>
+    <string name="mMenuTitle">Navigation Menu</string>
+
+    <!-- #Currencies -->
+    <string name="IQD">IQD</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="CP">#F74046</color>
+    <color name="CPD">#D92228</color>
+    <color name="CA">@color/CP</color>
+    <color name="CP2">#F9FAFC</color>
+
+    <!-- Main -->
+    <color name="mBody">@color/CP2</color>
+    <color name="mLoad">@color/CP</color>
+    <color name="mLoadingBG">#92FFFFFF</color>
+    <color name="mCartItem">@color/CP2</color>
+    <color name="mCartItemPressed">#FCEEF0</color>
+    <color name="mCartIconIV">@color/CP2</color>
+</resources>

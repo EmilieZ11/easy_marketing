@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Easy Delivery</string>
+
+    <!-- GLOBAL -->
+    <string name="site">http://easys.uk/demo/retail/</string>
+    <string name="delManager">http://easys.uk/android/delivery.php</string>
+    <string name="noInternet">الرجاء التحقق من اتصال الانترنت الخاص بك!</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="ok">حسنا</string>
+    <string name="unknown">مجهول</string>
+
+    <!-- Main -->
+    <string name="toExit">اضغط مرتين للخروج&#8230;</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="anError">للأسف حدث خطأ!</string>
+
+    <!-- Delivery -->
+    <string name="dTBTitle">Easy Marketing</string>
+    <string name="dYou">أنت هنا!</string>
+    <string name="dCus">الغایة</string>
+    <string name="dLogOut">خروج</string>
+    <string name="incomInfo">معلومات غير مكتملة!</string>
+    <string name="couldNotUpdate">لا يمكن إرسال إحداثيات موقعك!</string>
+    <string name="dCall">اتصل بالعميل</string>
+    <string name="dLogOutSure">هل أنت متأكد أنك تريد الخروج؟</string>
+    <string name="dOrdEmpty">تهانينا، ليس لديك طلبات الآن.</string>
+    <string name="mOrderStat">حالة الطلب</string>
+    <array name="statuses">
+        <item>خارج للتوصيل</item>
+        <item>معین سائقه</item>
+        <item>فاشل</item>
+        <item>منجز</item>
+        <item>ملغی</item>
+    </array>
+    <array name="statusesCodes">
+        <item>out-for-delivery</item>
+        <item>driver-assigned</item>
+        <item>failed</item>
+        <item>completed</item>
+        <item>cancelled</item>
+    </array>
+    <string name="dChangeStatus">تغيير الحالة</string>
+    <string name="firstSpecifyCustomer">حدد أولاً الترتيب الذي تريد الاتصال به.</string>
+
+    <!-- #Currencies -->
+    <string name="IQD">د.ع</string>
+
+    <!--<string name=""></string>-->
+</resources>

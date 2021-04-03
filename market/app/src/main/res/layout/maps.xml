@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pBody"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".Maps">
+
+    <View
+        android:id="@+id/pMotor1"
+        style="@style/motor" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/pToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/pToolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/maps"
+        app:navigationIcon="@drawable/back_1"
+        app:subtitle="@string/pTBSubtitle"
+        app:subtitleTextColor="@color/pTBSubtitle"
+        app:title="@string/pTBTitle"
+        app:titleTextColor="@color/pTBTitle" />
+
+    <fragment
+        android:id="@+id/pMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pToolbar" />
+
+    <View
+        style="@style/shadow_1"
+        app:layout_constraintTop_toBottomOf="@id/pToolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

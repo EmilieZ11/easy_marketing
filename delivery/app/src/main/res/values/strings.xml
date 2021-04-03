@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Easy Delivery</string>
+
+    <!-- GLOBAL -->
+    <string name="site">http://easys.uk/demo/retail/</string>
+    <string name="delManager">http://easys.uk/android/delivery.php</string>
+    <string name="noInternet">Please check your internet connection!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="unknown">Unknown</string>
+
+    <!-- Main -->
+    <string name="toExit">Double tap to exit&#8230;</string>
+    <string name="login">Sign In</string>
+    <string name="anError">Unfortunately an error occurred!</string>
+
+    <!-- Delivery -->
+    <string name="dTBTitle">Easy Marketing</string>
+    <string name="dYou">You are here!</string>
+    <string name="dCus">Destination</string>
+    <string name="dLogOut">Sign Out</string>
+    <string name="incomInfo">Incomplete Information!</string>
+    <string name="couldNotUpdate">Could not send your location coordinates!</string>
+    <string name="dCall">Call the Customer</string>
+    <string name="dLogOutSure">Are you sure you want to sign out?</string>
+    <string name="dOrdEmpty">Congratulations, you have no orders now.</string>
+    <string name="mOrderStat">Order Status</string>
+    <array name="statuses">
+        <item>Out for Delivery</item>
+        <item>Driver Assigned</item>
+        <item>Failed</item>
+        <item>Completed</item>
+        <item>Cancelled</item>
+    </array>
+    <array name="statusesCodes">
+        <item>out-for-delivery</item>
+        <item>driver-assigned</item>
+        <item>failed</item>
+        <item>completed</item>
+        <item>cancelled</item>
+    </array>
+    <string name="dChangeStatus">Change Status</string>
+    <string name="firstSpecifyCustomer">First specify the order whose customer you want to call.</string>
+
+    <!-- #Currencies -->
+    <string name="IQD">IQD</string>
+
+    <!--<string name=""></string>-->
+</resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dBody"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".Delivery">
+
+    <View
+        android:id="@+id/dMotor1"
+        style="@style/motor" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/dToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/dToolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/d_toolbar"
+        app:navigationIcon="@drawable/list_3"
+        app:title="@string/dTBTitle"
+        app:titleTextColor="@color/dTBTitle" />
+
+    <fragment
+        android:id="@+id/dMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dToolbar" />
+
+    <View
+        style="@style/shadow_1"
+        app:layout_constraintTop_toBottomOf="@id/dToolbar" />
+
+
+    <View
+        android:id="@+id/dNavBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@color/dNavBG"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/dNavShadow"
+        style="@style/shadow_1_vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/dNav"
+        app:layout_constraintStart_toEndOf="@id/dNav"
+        app:layout_constraintTop_toTopOf="@id/dNav" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dNav"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/dNav"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.66">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dNavLogo"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:background="@color/dNavLogo"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/dNL0"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="15dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/easy_delivery_logo_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.69"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/dNL1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="9dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/easy_logo_2_text_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.1654"
+                app:layout_constraintStart_toStartOf="@id/dNL2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.39" />
+
+            <ImageView
+                android:id="@+id/dNL2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/easy_delivery_text_1_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.1718"
+                app:layout_constraintStart_toEndOf="@id/dNL0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.66" />
+
+
+            <View
+                android:id="@+id/dOrdReload"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/hover_tp_to_cp2_weak_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/dOrdReloadIV"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:src="@drawable/reload_3"
+                app:layout_constraintBottom_toBottomOf="@id/dOrdReload"
+                app:layout_constraintLeft_toLeftOf="@id/dOrdReload"
+                app:layout_constraintRight_toRightOf="@id/dOrdReload"
+                app:layout_constraintTop_toTopOf="@id/dOrdReload" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dOrders"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dNavLogo" />
+
+        <TextView
+            android:id="@+id/dOrdEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="@string/dOrdEmpty"
+            android:textAlignment="center"
+            android:textColor="@color/dOrdEmpty"
+            android:textSize="19sp"
+            android:translationY="-111dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/dOrders"
+            app:layout_constraintLeft_toLeftOf="@id/dOrders"
+            app:layout_constraintRight_toRightOf="@id/dOrders"
+            app:layout_constraintTop_toTopOf="@id/dOrders" />
+
+        <View
+            style="@style/shadow_1"
+            android:layout_height="2dp"
+            android:alpha="0.4"
+            app:layout_constraintTop_toBottomOf="@id/dNavLogo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/dCover1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@color/dCover1"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/dStatusesSV"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:elevation="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/dStatuses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dChangeStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dChangeStatus"
+                android:paddingTop="20dp"
+                android:paddingBottom="35dp">
+
+                <TextView
+                    android:id="@+id/dChangeStatusTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="@string/dChangeStatus"
+                    android:textAlignment="center"
+                    android:textColor="@color/dChangeStatusTV"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

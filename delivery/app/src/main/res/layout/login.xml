@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lBody"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lBody"
+    android:layoutDirection="ltr"
+    tools:context=".Login">
+
+    <View
+        android:id="@+id/lMotor1"
+        style="@style/motor" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lLogoBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/lTitle1"
+            android:layout_width="130dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/easy_logo_2_text_1"
+            app:layout_constraintBottom_toTopOf="@id/lTitle2"
+            app:layout_constraintLeft_toLeftOf="@id/lTitle2" />
+
+        <ImageView
+            android:id="@+id/lTitle2"
+            android:layout_width="199dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="48dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/easy_delivery_text_1_2"
+            app:layout_constraintBottom_toBottomOf="@id/lLogo"
+            app:layout_constraintRight_toRightOf="@id/lLogoCover"
+            app:layout_constraintTop_toTopOf="@id/lLogo" />
+
+        <View
+            android:id="@+id/lLogoCover"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/lBody"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/lLogo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/lLogo"
+            android:layout_width="135.5dp"
+            android:layout_height="135.5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/easy_delivery_logo_1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/lUser"
+        style="@style/lET"
+        android:inputType="text"
+        android:maxLength="30"
+        app:layout_constraintTop_toBottomOf="@id/lLogoBox" />
+
+    <EditText
+        android:id="@+id/lPass"
+        style="@style/lET"
+        android:inputType="textPassword"
+        android:maxLength="50"
+        app:layout_constraintTop_toBottomOf="@id/lUser" />
+
+    <TextView
+        android:id="@+id/lLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_1"
+        android:paddingStart="16dp"
+        android:paddingTop="11dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="11dp"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/lLogin"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lPass"
+        app:layout_constraintWidth_percent="0.69" />
+</androidx.constraintlayout.widget.ConstraintLayout>

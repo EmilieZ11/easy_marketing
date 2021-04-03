@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="CP">#F74046</color>
+    <color name="CPD">#D92228</color>
+    <color name="CA">@color/CP</color>
+    <color name="CP2">#F9FAFC</color>
+
+    <!-- GLOBAL -->
+    <color name="shadow_1">#55000000</color>
+
+    <!-- Main -->
+    <color name="mBody">@color/CP2</color>
+    <color name="mLoad">@color/CP</color>
+    <color name="mCartIconCF">@color/CP</color>
+    <color name="mCart">#FFF</color><!--@color/CP-->
+    <color name="mCartTB">@color/CPD</color>
+    <color name="mCartTitle">@color/CP2</color>
+    <color name="mCartItem">@color/CP2</color>
+    <color name="mCartItemPressed">#FCEEF0</color>
+    <color name="mCartItemTV">@color/CPD</color>
+    <color name="mCartItemLL2">#F6F6F6</color>
+    <color name="mCartItemGoDis">#B0B0B0</color>
+    <color name="mCartItemGoDisPressed">@color/mCartItemPressed</color>
+    <color name="mCILITV">@color/CPD</color>
+    <color name="mCIList">@color/mCartItemLL2</color>
+    <color name="mCIBorder">#E0E0E0</color>
+    <color name="mCITitleBorder">#DADADA</color>
+    <color name="mRVEmpty">#888</color>
+    <color name="mLoadingBG">#92FFFFFF</color>
+
+    <!-- Maps -->
+    <color name="pToolbar">@color/CPD</color>
+    <color name="pTBTitle">@color/CP2</color>
+    <color name="pTBSubtitle">@color/CP2</color>
+
+    <!--<color name=""></color>-->
+</resources>
